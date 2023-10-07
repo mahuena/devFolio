@@ -1,0 +1,135 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    top: 0;left: 0; 
+    width: 100%;
+    padding-top: 30px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    margin-left: 50px;
+    max-width: 20%;
+}
+nav ul {
+    margin-right: 80px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 15px 30px;
+}
+nav ul li a {
+    color: #a0a0a0;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: white;
+}
+nav ul li a:after{
+    padding-top: 20px;
+    content: '';
+    display: block;
+    border-bottom: 4px solid gold;
+    transform: scaleX(0); 
+  transition: transform .3s ease-in-out;
+} 
+nav ul li a:hover:after{
+    transform: scaleX(1);
+}
+#homepage {
+    color: white;
+    height: max-content;
+    width: 99%;
+    margin: auto;
+    margin-top: 10px;
+    padding-bottom: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#homepage h1{
+    text-align: right;
+    margin-right: 150px;
+    margin-top: 170px;
+    margin-bottom: 30px;
+    color: gold;
+    font-size: 40px;
+}
+#homepage p {
+    text-align: right;
+    line-height: 40px;
+    margin-right: 150px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+#homepage span {
+    color: #017d6f;
+    font-weight: bold;  
+}
+#homepage span:hover{
+    color: gold;
+}
+#homepage .container {
+    display: inline-block;
+    margin-right: 30px;
+}
+#homepage .container p {
+    display: inline-block; 
+    margin-right: 15px; 
+    color: #017d6f;
+}
+#homepage .buttons {
+    float: right;
+    margin-right: 150px;
+    margin-top: 30px;
+}
+#homepage .circle {
+    padding: 10px 15px;
+    border: 2px dashed #017d6f;
+    border-radius: 95%;
+    cursor: pointer;
+    text-align: center;
+    background: transparent;
+    transition: all 0.5s linear;
+}
+#homepage .circle:hover {
+    transform: scale(1.2);
+    border: 2px dashed gold;
+}
+
+@media only screen and (max-width:1200px){
+    nav {
+        margin-bottom: 80px;
+    }
+    #homepage h1, #homepage p{
+        text-align: center;
+        margin: auto; 
+    }
+    #homepage .container{
+        display: block;
+        text-align: center;
+        margin-right: 0;
+        margin: auto;
+        padding-bottom: 15px;
+    }
+    #homepage h1 {
+        margin: auto;
+        margin-top: 20px;
+    }
+    #homepage .circle {
+        padding: 5px 10px;
+    }
+}
+
+
+
+
+
+
+
